@@ -39,6 +39,9 @@ export const Views = (props) => {
       messages={currentAppLocale.messages}>
       <ConfigProvider locale={currentAppLocale.antd} direction={direction}>
         <Switch>
+          {/* <Route exact path="/">
+            <LandingPage />
+          </Route> */}
           <Route exact path="/">
             <Redirect to={APP_PREFIX_PATH} />
           </Route>

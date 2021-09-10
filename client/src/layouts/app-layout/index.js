@@ -28,7 +28,7 @@ import { useThemeSwitcher } from "react-css-theme-switcher";
 const { Content } = Layout;
 const { useBreakpoint } = Grid;
 
-export const AppLayout = ({ navCollapsed, navType, location, direction }) => {
+export const AppLayout = ({ navCollapsed, navType, location, direction, token }) => {
   const currentRouteInfo = utils.getRouteInfo(navigationConfig, location.pathname)
   const screens = utils.getBreakPoint(useBreakpoint());
   const isMobile = screens.length === 0 ? false : !screens.includes('lg')
@@ -60,10 +60,10 @@ export const AppLayout = ({ navCollapsed, navType, location, direction }) => {
   return (
     <Layout>
       <HeaderNav isMobile={isMobile}/>
-      {(isNavTop && !isMobile) ? <TopNav routeInfo={currentRouteInfo}/> : null}
+      {isNavTop && !isMobile && <TopNav routeInfo={currentRouteInfo}/>}
       <Layout className="app-container">
-        {(isNavSide && !isMobile) ? <SideNav routeInfo={currentRouteInfo}/> : null }
-        <Layout className="app-layout" style={getLayoutDirectionGutter()}>
+        {token?.admin && isNavSide && !isMobile && <SideNav routeInfo={currentRouteInfo}/>}
+        <Layout className="app-layout" style={ Object.assign(getLayoutDirectionGutter(), token?.admin ? {} : {paddingLeft: '0px'}) }>
           <div className={`app-content ${isNavTop ? 'layout-top-nav' : ''}`}>
             <PageHeader display={currentRouteInfo?.breadcrumb} title={currentRouteInfo?.title} />
             <Content>
@@ -78,9 +78,11 @@ export const AppLayout = ({ navCollapsed, navType, location, direction }) => {
   )
 }
 
-const mapStateToProps = ({ theme }) => {
+const mapStateToProps = ({ theme, auth }) => {
   const { navCollapsed, navType, locale } =  theme;
-  return { navCollapsed, navType, locale }
+  const { token } = auth;
+  console.log("token", token);
+  return { navCollapsed, navType, locale, token }
 };
 
 export default connect(mapStateToProps)(React.memo(AppLayout));

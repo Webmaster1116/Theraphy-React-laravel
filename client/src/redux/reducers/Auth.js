@@ -1,5 +1,6 @@
 import {
 	AUTH_TOKEN,
+	TEST,
 	AUTHENTICATED,
 	SHOW_AUTH_MESSAGE,
 	HIDE_AUTH_MESSAGE,
@@ -15,16 +16,20 @@ const initState = {
   message: '',
   showMessage: false,
   redirect: '',
-  token: localStorage.getItem(AUTH_TOKEN),
+  token: JSON.parse(localStorage.getItem(AUTH_TOKEN)),
 }
 
 const auth = (state = initState, action) => {
+	console.log('test', action)
 	switch (action.type) {
-		case AUTHENTICATED:
+		case AUTHENTICATED: 
+			let {admin, user} = action.token;
+			let path =  '/';
+			if (user) path = '/app/user-admin'
 			return {
 				...state,
 				loading: false,
-				redirect: '/',
+				redirect: path,
 				token: action.token
 			}
 		case SHOW_AUTH_MESSAGE: 

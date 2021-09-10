@@ -218,7 +218,7 @@ function ListForm(props) {
   };
 
   const userAdd = () => {
-    history.push("/add-user/new");
+    history.push("/app/add-user/new");
   };
 
   const [list, setList] = useState(userListData);

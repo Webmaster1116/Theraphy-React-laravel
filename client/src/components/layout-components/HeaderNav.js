@@ -16,7 +16,7 @@ import utils from 'utils'
 const { Header } = Layout;
 
 export const HeaderNav = props => {
-  const { navCollapsed, mobileNav, navType, headerNavColor, toggleCollapsedNav, onMobileNavToggle, isMobile, currentTheme, direction } = props;
+  const { navCollapsed, mobileNav, navType, headerNavColor, toggleCollapsedNav, onMobileNavToggle, isMobile, currentTheme, direction, token } = props;
   const [searchActive, setSearchActive] = useState(false)
 
   const onSearchActive = () => {
@@ -68,14 +68,14 @@ export const HeaderNav = props => {
           <div className="nav-left">
             <ul className="ant-menu ant-menu-root ant-menu-horizontal">          
               {
-                isNavTop && !isMobile ?
+                 isNavTop && !isMobile ?
                 null
                 :
                 <li className="ant-menu-item ant-menu-item-only-child" onClick={() => {onToggle()}}>
                   {navCollapsed || isMobile ? <MenuUnfoldOutlined className="nav-icon" /> : <MenuFoldOutlined className="nav-icon" />}
                 </li>
               }
-              {
+              {/* {
                 isMobile ?
                 <li className="ant-menu-item ant-menu-item-only-child" onClick={() => {onSearchActive()}}>
                   <SearchOutlined />
@@ -84,7 +84,7 @@ export const HeaderNav = props => {
                 <li className="ant-menu-item ant-menu-item-only-child" style={{cursor: 'auto'}}>
                   <SearchInput mode={mode} isMobile={isMobile} />
                 </li>
-              }
+              } */}
             </ul>
           </div>
           <div className="nav-right">
@@ -100,9 +100,10 @@ export const HeaderNav = props => {
   )
 }
 
-const mapStateToProps = ({ theme }) => {
+const mapStateToProps = ({ theme, auth }) => {
   const { navCollapsed, navType, headerNavColor, mobileNav, currentTheme, direction } =  theme;
-  return { navCollapsed, navType, headerNavColor, mobileNav, currentTheme, direction }
+  const { token } = auth;
+  return { navCollapsed, navType, headerNavColor, mobileNav, currentTheme, direction, token }
 };
 
 export default connect(mapStateToProps, {toggleCollapsedNav, onMobileNavToggle})(HeaderNav);

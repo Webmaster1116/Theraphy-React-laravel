@@ -24,4 +24,5 @@ Route::resource('users', UserController::class);
 Route::resource('projects', ProjectController::class);
 
 // Route::resource('projects', 'ProjectController');
+Route::get('/user-auth' , [UserController::class, 'user_auth']);
 

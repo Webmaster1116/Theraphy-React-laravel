@@ -6,7 +6,6 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import MenuContent from './MenuContent'
 
 const { Sider } = Layout;
-
 export const SideNav = ({navCollapsed, sideNavTheme, routeInfo, hideGroupTitle, localization = true }) => {
   const props = { sideNavTheme, routeInfo , hideGroupTitle, localization}
   return (

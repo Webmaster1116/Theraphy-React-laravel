@@ -7,15 +7,22 @@ import { GoogleSVG, FacebookSVG } from 'assets/svg/icon';
 import CustomIcon from 'components/util-components/CustomIcon'
 import { 
 	signIn, 
+	authenticated,
 	showLoading, 
 	showAuthMessage, 
 	hideAuthMessage, 
 	signInWithGoogle, 
 	signInWithFacebook 
 } from 'redux/actions/Auth';
+import {AUTH_TOKEN} from 'redux/constants/Auth';
 import { useHistory } from "react-router-dom";
 import { motion } from "framer-motion"
+import axios from 'axios';
+import { API_URL } from "../../../_utiles/config";
+import { Route, Switch, Redirect, withRouter } from "react-router-dom";
+import { APP_PREFIX_PATH, AUTH_PREFIX_PATH } from 'configs/AppConfig'
 
+export const USER_AUTH_URL = `${API_URL}/user-auth`;
 export const LoginForm = props => {
 	let history = useHistory();
 
@@ -38,13 +45,25 @@ export const LoginForm = props => {
 	} = props
 
 	const initialCredential = {
-		email: 'user1@themenate.net',
-		password: '2005ipo'
+		email: 'peterc93@gmail.com',
+		password: '111111'
 	}
 
-	const onLogin = values => {
+	const onLogin = async (values) => {
 		showLoading()
-		signIn(values);
+		// signIn(values);
+		const response = await axios.get(`${USER_AUTH_URL}`, {
+			headers: {
+			  "Content-Type": "application/json",
+			  "Access-Control-Allow-Origin": '*',
+			  "Access-Control-Allow-Credentials": true
+			},
+			params: values,
+		  });
+		  if (response.data){
+			localStorage.setItem(AUTH_TOKEN, JSON.stringify({[response.data.role]: response.data}));
+			props.authenticated({[response.data.role]: response.data});
+		  }
 	};
 
 	const onGoogleLogin = () => {
@@ -178,12 +197,13 @@ LoginForm.defaultProps = {
 };
 
 const mapStateToProps = ({auth}) => {
-	const {loading, message, showMessage, token, redirect} = auth;
+  const {loading, message, showMessage, token, redirect} = auth;
   return {loading, message, showMessage, token, redirect}
 }
 
 const mapDispatchToProps = {
 	signIn,
+	authenticated,
 	showAuthMessage,
 	showLoading,
 	hideAuthMessage,

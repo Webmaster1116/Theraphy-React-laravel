@@ -1,6 +1,6 @@
 // export const API_URL = "http://localhost/api";
 // export const BASE_URL = "http://localhost";
-export const API_URL = "https://laravel-backend.peterc93.sg-host.com";
+export const API_URL = "http://localhost:8000";
 export const BASE_URL = "http://localhost";
 export const sampleClientFields = [
   "Identificacion",

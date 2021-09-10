@@ -5,7 +5,7 @@ import {
 	SIGNOUT,
 	SIGNUP,
 	SIGNIN_WITH_GOOGLE,
-	SIGNIN_WITH_FACEBOOK
+	SIGNIN_WITH_FACEBOOK,
 } from '../constants/Auth';
 import {
 	showAuthMessage,
@@ -13,7 +13,7 @@ import {
 	signOutSuccess,
 	signUpSuccess,
 	signInWithGoogleAuthenticated,
-	signInWithFacebookAuthenticated
+	signInWithFacebookAuthenticated,
 } from "../actions/Auth";
 
 import FirebaseService from 'services/FirebaseService'
@@ -101,12 +101,13 @@ export function* signInWithFacebook() {
 	});
 }
 
+
 export default function* rootSaga() {
   yield all([
 		fork(signInWithFBEmail),
 		fork(signOut),
 		fork(signUpWithFBEmail),
 		fork(signInWithFBGoogle),
-		fork(signInWithFacebook)
+		fork(signInWithFacebook),
   ]);
 }

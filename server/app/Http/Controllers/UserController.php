@@ -18,6 +18,13 @@ class UserController extends Controller
         $users = DB::select('select * from user');
         return response()->json($users);
     }
+    public function user_auth(Request $request)
+    {
+        $email = $request->email;
+        $password = $request->password;
+        $users = DB::table('user')->where('email', $email)->where('password', $password)->first();
+        return response()->json($users);
+    }
     /**
      * Show the form for creating a new resource.
      *

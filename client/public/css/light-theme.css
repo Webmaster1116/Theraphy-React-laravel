@@ -2858,12 +2858,44 @@ mark {
   .ant-back-top {
     right: 60px;
   }
+  .Search-bar {
+    margin-left: -100px;
+  }
 }
 @media screen and (max-width: 480px) {
   .ant-back-top {
     right: 20px;
   }
+  .Header-middle-body h1 {
+    display: none;
+  }
+  .between-website {
+    font-size: 30px !important;
+    margin-left: -27px;
+  }
+
+  .between-website-content {
+    font-size: 14px !important;
+    margin-left: -44px !important;
+    margin-top: 0px !important;
+  }
+  .Search-bar {
+    width: 220% !important;
+    margin-top: -55px;
+  }
+
+  .readmore-button {
+    margin-left: 10px !important;
+    margin-top: 20px !important;
+    font-size: 16px !important;
+    padding: 0 !important;
+  }
+
+  .load-profiles-button {
+    font-size: 16px !important;
+  }
 }
+
 .ant-badge {
   box-sizing: border-box;
   margin: 0;
@@ -3353,38 +3385,87 @@ mark {
 .advertise-card-image {
   display: flex;
   justify-content: center;
+  background-color: #f3f3f4;
+  height: 178px;
+  align-items: center;
+}
+
+.advertise-card-image1 {
+  height: 178px;
+  background-image: url(/img/avatars/thumb-03.jpg);
+  border-radius: 7px 7px 0 0;
 }
 .advertise-card-image img {
-  height: 80px;
+  height: 150px;
+}
+.advertise-card-image1 img {
+  height: 178px;
+}
+
+.RAB-nav {
+  color: white;
+  background: black;
+  width: 42px;
+  font-size: 12px;
+  padding: 3px 0;
+  float: right;
+  margin-top: 10px;
+}
+
+.paid-card {
+  display: flex !important;
+}
+
+.paid-card img {
+  height: 33px;
+  margin-top: 8px;
+  margin-right: 10px;
 }
 
 .advertise-card-footer {
   display: flex;
-  justify-content: space-between;
+  padding: 0px 19px;
 }
+
+.advertise-readmore-nav {
+  text-align: initial !important;
+  margin-left: 15%;
+}
+
 .advertise-between {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-end; */
+  float: left !important;
 }
 .between-website {
-  color: #d9505c;
-  font-size: 40px;
+  color: #ff8e8f;
+  font-size: 70px;
   display: block;
-  background: #f5f4f5;
+  font-weight: bold;
 }
-.advertise-color-div {
-  background-color: #f5f4f5;
-}
+
 .between-website-content {
   display: flex;
   align-items: center;
+  font-size: 24px;
+  margin-left: 50px;
+  margin-top: -13px;
 }
-.advertise-readmore {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+
+.readmore-button {
+  background-color: #ff8e8f !important;
+  font-size: 18px !important;
+  padding: 11px 60px 37px 60px !important;
+  border: 1px solid #ff8e8f !important;
+  margin-left: 90px;
+  margin-top: 45px;
+}
+
+.advertise-color-div {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 /* .advertise-button {
@@ -3399,28 +3480,78 @@ mark {
   display: block;
   color: black;
   font-weight: 800;
-  font-size: 8px;
-  margin-top: 10px;
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 5px;
 }
 .advertise-card {
   line-height: 0.7;
+  text-align: left;
+  padding: 0px 19px;
 }
 .card-zip-city {
-  font-size: 6px;
+  font-size: 11px;
+  font-weight: 800;
 }
 .card-content {
-  font-size: 7px;
+  font-size: 14px;
+  color: black !important;
   margin-top: 10px;
   margin-bottom: -10px;
+  text-align: left;
+  padding: 0px 19px;
 }
 .advertise-card-tag {
   line-height: 1 !important;
-  font-size: 7px !important;
   padding: 3px 6px !important;
+  font-size: 12px !important;
+}
+
+.advertise-card-tag1 {
+  border-radius: 50% !important;
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.card-circle-button {
+  height: 24px !important;
+  min-width: 24px !important;
+  padding: 0px !important;
+  font-size: 10px;
+  margin-top: -12px;
+  background-color: #efefef;
+  color: black;
+  border: 1px solid #efefef;
+}
+
+.card-circle-button1 {
+  height: 30px !important;
+  width: 30px !important;
+  min-width: 30px !important;
+  padding: 0px !important;
+  font-size: 10px;
+  margin-top: -12px;
+  background-color: blue;
+  color: white;
+  border: 1px solid #efefef;
+}
+
+.footer-logo {
+  margin-top: -13px;
+  margin-left: 50px;
+}
+
+.footer-logo img {
+  width: 25px !important;
+  margin-right: 12px !important;
 }
 
 .advertise-card-divider {
   margin-bottom: 1px !important;
+  padding: 0px 15px !important;
+  width: 87% !important;
+  min-width: 87% !important;
+  margin: 28px 15px !important;
 }
 
 .ant-btn > .anticon {
@@ -5071,7 +5202,7 @@ a.ant-btn-sm {
   font-feature-settings: "tnum";
   position: relative;
   background: #fff;
-  border-radius: 0.625rem;
+  border-radius: 7px;
 }
 .ant-card-rtl {
   direction: rtl;
@@ -5140,9 +5271,7 @@ a.ant-btn-sm {
   margin-right: auto;
   margin-left: 0;
 }
-.ant-card-body {
-  padding: 10px;
-}
+
 .ant-card-body::before {
   display: table;
   content: "";
@@ -27811,7 +27940,7 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover:first-child::after {
 .ant-tag {
   background: #fff;
   padding: 0 10px;
-  margin: 10px 10px 0 0;
+  margin: -10px 10px 0 0;
 }
 .ant-tag-blue {
   background: rgba(62, 121, 247, 0.1);
@@ -35236,4 +35365,10 @@ a.text-dark:hover {
 }
 .invisible {
   visibility: hidden !important;
+}
+
+@media screen and (max-width: 1050px) {
+  .Search-bar {
+    width: 140%;
+  }
 }

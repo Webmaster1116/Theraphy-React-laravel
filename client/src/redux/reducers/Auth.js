@@ -20,7 +20,6 @@ const initState = {
 }
 
 const auth = (state = initState, action) => {
-	console.log('test', action)
 	switch (action.type) {
 		case AUTHENTICATED: 
 			let {admin, user} = action.token;

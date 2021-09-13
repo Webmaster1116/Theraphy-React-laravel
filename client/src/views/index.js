@@ -8,6 +8,7 @@ import { IntlProvider } from "react-intl";
 import { ConfigProvider } from 'antd';
 import { APP_PREFIX_PATH, AUTH_PREFIX_PATH } from 'configs/AppConfig'
 import useBodyClass from 'hooks/useBodyClass';
+import LandingPage from './landingpage'
 
 function RouteInterceptor({ children, isAuthenticated, ...rest }) {
   return (
@@ -19,7 +20,7 @@ function RouteInterceptor({ children, isAuthenticated, ...rest }) {
         ) : (
           <Redirect
             to={{
-              pathname: AUTH_PREFIX_PATH,
+              pathname: '/',
               state: { from: location }
             }}
           />
@@ -39,11 +40,8 @@ export const Views = (props) => {
       messages={currentAppLocale.messages}>
       <ConfigProvider locale={currentAppLocale.antd} direction={direction}>
         <Switch>
-          {/* <Route exact path="/">
-            <LandingPage />
-          </Route> */}
           <Route exact path="/">
-            <Redirect to={APP_PREFIX_PATH} />
+            {token ? <Redirect to={APP_PREFIX_PATH} /> : <LandingPage />}
           </Route>
           <Route path={AUTH_PREFIX_PATH}>
             <AuthLayout direction={direction} />

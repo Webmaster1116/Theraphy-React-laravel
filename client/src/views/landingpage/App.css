@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+  font-family: "Helvetica Neue";
+  overflow-x: hidden;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Header-middle-body {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-style{
+  top: 0px;
+    background-color: #0c0922;
+    height: 45px;
+    vertical-align: middle;
+    line-height: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #fff;
+    font-family: "Helvetica Neue";
+}
+
+.Search-bar {
+  background-color: #fff;
+  /* border: 1px solid; */
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #f3f3f5;
+  padding: 10px 5px;
+  margin-top: -30px;
+  font-size: 17px;
+  line-height: 2.5;
+}
+
+.header-search {
+  width: 40% !important;
+  padding: 2px 5px !important;
+  color: #455560 !important;
+  border: 1px solid #fff !important;
+  border-right: 1px solid #c7c7c7 !important;
+  border-radius: 0px !important;
+  background-color: #fff !important;
+}
+.header-search:hover {
+  border-color: #fff !important;
+  border-right: 1px solid #c7c7c7 !important;
+  background-color: #fff !important;
+}
+.header-search:focus {
+  box-shadow: #fff 0px 0px 0px 2px !important;
+  border-color: #fff !important;
+  border-right: 1px solid #c7c7c7 !important;
+}
+.header-search::placeholder{
+  color: #455560 !important;
+  font-size: 17px;
+}
+
+.header-select .ant-select-selector {
+  border: 1px solid #fff !important;
+  border-radius: 0px !important;
+  background-color: #fff !important;
+  font-size: 17px;
+  font-weight: 500;
+}
+.header-select .ant-select-selector .ant-select-selection-placeholder {
+  color: black;
+}
+.header-select .ant-select-arrow {
+  color: black !important;
+}
+
+.load-profiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load-profiles-button {
+  background-color: black !important;
+  border: 1px solid black !important;
+  border-radius: 5px !important;
+  margin: 20px 0 50px !important;
+  padding: 11px 60px 39px 60px !important;
+  font-size: 18px !important;
+}
+
+.Header-nav-tag{
+  font-size: 17px;
+  margin: 10px 0 20px;
+}
+
+.Header-nav-tag a {
+  color: #467f94;
+  font-size: 17px;
+  margin-left: 15px;
+}
+
+.Header-nav-tag a:hover {
+  color: #0ac4e9;
+}
+
+.Footer-nav a {
+  color: #777689 !important;
+  margin-right: 15px;
+}
+.Footer-nav a:hover {
+  color: white !important;
+}
+
+.small-tag {
+  font-size: 12px !important;
+}
+
+footer{
+  height: 160px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Header-middle-body{
+    justify-content: end;
+  }
+
+  .Footer-nav{
+    line-height: 2;
+    padding: 10px 22px;
+    margin-top: 20px !important;
+  }
+
+  footer{
+    height: 200px;
+  }
+
+  .nav-style{
+      height: 80px;
+      font-size: 14px;
+      padding: 10px 10px;
+      line-height: 30px;
+  }
+
+  .header-search{
+    width: 80% !important;
+  }
+
+  .Header-nav-tag span{
+    display: block;
+  }
+}

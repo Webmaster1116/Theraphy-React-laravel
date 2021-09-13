@@ -71,12 +71,12 @@ const Advertisement = () => {
               <Col xs={24} sm={24} md={24} lg={24}>
                 {value === "front" ? (
                   <Row>
-                    <Col xs={24} sm={24} md={12}>
+                    <Col xs={24} sm={24} md={24}>
                       <Space direction="horizontal">
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-6.jpg" />
@@ -86,7 +86,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -105,7 +105,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-4.jpg" />
@@ -115,7 +115,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -134,7 +134,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-8.jpg" />
@@ -144,7 +144,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -163,7 +163,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-9.jpg" />
@@ -173,7 +173,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -191,13 +191,12 @@ const Advertisement = () => {
                         </Card>
                       </Space>
                     </Col>
-                    <Col xs={24} sm={24} md={12}></Col>
-                    <Col xs={24} sm={24} md={12}>
+                    <Col xs={24} sm={24} md={24}>
                       <Space direction="horizontal">
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-1.jpg" />
@@ -207,7 +206,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -226,7 +225,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-5.jpg" />
@@ -236,7 +235,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -255,7 +254,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-2.jpg" />
@@ -265,7 +264,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -284,7 +283,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-1.jpg" />
@@ -294,7 +293,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -312,7 +311,6 @@ const Advertisement = () => {
                         </Card>
                       </Space>
                     </Col>
-                    <Col xs={24} sm={24} md={12}></Col>
                     <Col xs={24} sm={24} md={6}>
                       <div className="mt-4 mr-4">
                         <Form.Item label="Select position" name="position">
@@ -341,15 +339,15 @@ const Advertisement = () => {
                 ) : null}
               </Col>
 
-              <Col xs={24} sm={24} md={24} lg={22}>
+              <Col xs={24} sm={24} md={24} lg={24}>
                 {value === "city" ? (
                   <Row>
-                    <Col xs={24} sm={24} md={12}>
+                    <Col xs={24} sm={24} md={24}>
                       <Space direction="horizontal">
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-6.jpg" />
@@ -359,7 +357,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -378,7 +376,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-6.jpg" />
@@ -388,7 +386,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -407,7 +405,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-7.jpg" />
@@ -417,7 +415,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -436,7 +434,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-3.jpg" />
@@ -446,7 +444,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -464,13 +462,12 @@ const Advertisement = () => {
                         </Card>
                       </Space>
                     </Col>
-                    <Col xs={24} sm={24} md={12}></Col>
-                    <Col xs={24} sm={24} md={12}>
+                    <Col xs={24} sm={24} md={24}>
                       <Space direction="horizontal">
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-7.jpg" />
@@ -480,7 +477,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -499,7 +496,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-1.jpg" />
@@ -509,7 +506,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -528,7 +525,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-7.jpg" />
@@ -538,7 +535,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -557,7 +554,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-2.jpg" />
@@ -567,7 +564,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -585,7 +582,6 @@ const Advertisement = () => {
                         </Card>
                       </Space>
                     </Col>
-                    <Col xs={24} sm={24} md={12}></Col>
                     <Col xs={24} sm={24} md={6}>
                       <div className="mt-4 mr-4">
                         <Form.Item label="Select position" name="position">
@@ -624,15 +620,15 @@ const Advertisement = () => {
                   </Row>
                 ) : null}
               </Col>
-              <Col xs={24} sm={24} md={24} lg={22}>
+              <Col xs={24} sm={24} md={24} lg={24}>
                 {value === "category" ? (
                   <Row>
-                    <Col xs={24} sm={24} md={12}>
+                    <Col xs={24} sm={24} md={24}>
                       <Space direction="horizontal">
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-4.jpg" />
@@ -642,7 +638,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -661,7 +657,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-2.jpg" />
@@ -671,7 +667,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -690,7 +686,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-6.jpg" />
@@ -700,7 +696,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -719,7 +715,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-1.jpg" />
@@ -729,7 +725,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -747,13 +743,12 @@ const Advertisement = () => {
                         </Card>
                       </Space>
                     </Col>
-                    <Col xs={24} sm={24} md={12}></Col>
-                    <Col xs={24} sm={24} md={12}>
+                    <Col xs={24} sm={24} md={24}>
                       <Space direction="horizontal">
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180 }}
+                          style={{ width: 250 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-8.jpg" />
@@ -763,7 +758,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -782,7 +777,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-1.jpg" />
@@ -792,7 +787,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -811,7 +806,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-4.jpg" />
@@ -821,7 +816,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -840,7 +835,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-1.jpg" />
@@ -850,7 +845,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -868,7 +863,6 @@ const Advertisement = () => {
                         </Card>
                       </Space>
                     </Col>
-                    <Col xs={24} sm={24} md={12}></Col>
                     <Col xs={24} sm={24} md={6}>
                       <div className="mt-4 mr-4">
                         <Form.Item label="Select position" name="position">
@@ -907,15 +901,15 @@ const Advertisement = () => {
                   </Row>
                 ) : null}
               </Col>
-              <Col xs={24} sm={24} md={24} lg={22}>
+              <Col xs={24} sm={24} md={24} lg={24}>
                 {value === "profiles" ? (
                   <Row>
-                    <Col xs={24} sm={24} md={12}>
+                    <Col xs={24} sm={24} md={24}>
                       <Space direction="horizontal">
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-3.jpg" />
@@ -925,7 +919,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -944,7 +938,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-1.jpg" />
@@ -954,7 +948,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -973,7 +967,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-2.jpg" />
@@ -983,7 +977,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -1002,7 +996,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-5.jpg" />
@@ -1012,7 +1006,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -1030,12 +1024,11 @@ const Advertisement = () => {
                         </Card>
                       </Space>
                     </Col>
-                    <Col xs={24} sm={24} md={12}></Col>
                     <Col
+                      className="advertise-color-div"
                       xs={24}
                       sm={24}
                       md={12}
-                      className="advertise-color-div"
                     >
                       <div className="advertise-between">
                         <div>
@@ -1057,12 +1050,12 @@ const Advertisement = () => {
                       </div>
                     </Col>
                     <Col xs={24} sm={24} md={6}></Col>
-                    <Col xs={24} sm={24} md={12}>
+                    <Col xs={24} sm={24} md={24}>
                       <Space direction="horizontal">
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-6.jpg" />
@@ -1072,7 +1065,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -1091,7 +1084,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-7.jpg" />
@@ -1101,7 +1094,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -1120,7 +1113,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-4.jpg" />
@@ -1130,7 +1123,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -1149,7 +1142,7 @@ const Advertisement = () => {
                         <Card
                           className="advertise-card-body"
                           title=""
-                          style={{ width: 180, opacity: 0.5 }}
+                          style={{ width: 250, opacity: 0.5 }}
                         >
                           <div className="advertise-card-image">
                             <img src="/img/avatars/thumb-7.jpg" />
@@ -1159,7 +1152,7 @@ const Advertisement = () => {
                               Free Profile - different layout
                             </span>
                             <span className="card-zip-city">
-                              2300, Copenhagen
+                              2250, Copenhagen
                             </span>
                           </div>
                           <div className="card-content">
@@ -1177,7 +1170,6 @@ const Advertisement = () => {
                         </Card>
                       </Space>
                     </Col>
-                    <Col xs={24} sm={24} md={12}></Col>
                     <Col xs={24} sm={24} md={6}>
                       <div className="mt-4 mr-4">
                         <Form.Item label="Select city" name="profile_city">

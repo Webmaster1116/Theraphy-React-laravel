@@ -39,7 +39,7 @@ export function* signOut() {
   yield takeEvery(SIGNOUT, function* () {
 		try {
 			const signOutUser = yield call(FirebaseService.signOutRequest);
-			if (signOutUser === undefined) {
+			if (!signOutUser) {
 				localStorage.removeItem(AUTH_TOKEN);
 				yield put(signOutSuccess(signOutUser));
 			} else {

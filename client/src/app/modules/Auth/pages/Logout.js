@@ -11,7 +11,7 @@ class Logout extends Component {
 
   render() {
     const { hasAuthToken } = this.props;
-    return hasAuthToken ? <LayoutSplashScreen /> : <Redirect to="/auth/login" />;
+    return hasAuthToken ? <LayoutSplashScreen /> : <Redirect to="/" />;
   }
 }
 

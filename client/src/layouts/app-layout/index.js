@@ -81,7 +81,6 @@ export const AppLayout = ({ navCollapsed, navType, location, direction, token })
 const mapStateToProps = ({ theme, auth }) => {
   const { navCollapsed, navType, locale } =  theme;
   const { token } = auth;
-  console.log("token", token);
   return { navCollapsed, navType, locale, token }
 };
 

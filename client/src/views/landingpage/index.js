@@ -11,7 +11,6 @@ export const LandingPage = (props) => {
     <div className="App">
     <Header/>
     <PageBody>
-      asdas
     </PageBody>
     <Footer/>
   </div>
